@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
   container: {
     height: '100%',
     marginHorizontal: 8,
-    paddingTop: 58,
+    marginTop: 58,
   },
 })

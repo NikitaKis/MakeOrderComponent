@@ -3,12 +3,12 @@
     "productPatternDetails": {
       "productPatternUuid": "87fb18e0-dc4e-11e8-9df7-0d29ba32d5b4",
       "productPatternIcon": "production/product-icons/Fanta.png",
-      "productPatternName": "Авторские напитки"
+      "productPatternName": "Drinks"
     },
     "products": [
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Апельсиновый фреш",
+        "productName": "Orange fresh",
         "productUuid": "cfa2c4a0-20ae-11e9-a7f6-67994e0bdf28",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -24,7 +24,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Морковный фреш",
+        "productName": "Fresh carrot",
         "productUuid": "9fb61760-20ae-11e9-a7f6-67994e0bdf28",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -40,7 +40,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Морс из свежих ягод",
+        "productName": "Fresh fruit juice",
         "productUuid": "d95cff60-23c9-11e9-9ed9-1d695cec15ec",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -56,7 +56,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Яблочный фреш",
+        "productName": "Apple fresh",
         "productUuid": "b76308f0-20ae-11e9-a7f6-67994e0bdf28",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -76,12 +76,12 @@
     "productPatternDetails": {
       "productPatternUuid": "5fdf93a0-1faa-11e9-9d16-172f835613fc",
       "productPatternIcon": "production/product-icons/rolls.png",
-      "productPatternName": "Ассорти"
+      "productPatternName": "Mixed"
     },
     "products": [
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Акита",
+        "productName": "Akita",
         "productUuid": "2b3d02a0-1fae-11e9-b547-43afcee08f2c",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -97,7 +97,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Большой набор именинника",
+        "productName": "Big set of birthday",
         "productUuid": "f10faa50-1fb8-11e9-b547-43afcee08f2c",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -113,7 +113,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Большой набор именинника",
+        "productName": "Big set of birthday",
         "productUuid": "33604890-245c-11e9-bc59-63c5e76c3a3f",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -129,7 +129,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Весенний сет",
+        "productName": "Spring set",
         "productUuid": "0052d180-1fb5-11e9-8583-b32ec9cab988",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -145,7 +145,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Два друга",
+        "productName": "Two friends",
         "productUuid": "f08c62d0-1fb3-11e9-8583-b32ec9cab988",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -161,7 +161,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Два друга",
+        "productName": "Two friends big",
         "productUuid": "9e9b1be0-245b-11e9-bc59-63c5e76c3a3f",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -177,7 +177,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Девичник",
+        "productName": "Hen-party",
         "productUuid": "6b65b930-1fae-11e9-b547-43afcee08f2c",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -193,7 +193,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Дорога солнца",
+        "productName": "Sun road",
         "productUuid": "53912f80-1fbb-11e9-b547-43afcee08f2c",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -853,12 +853,12 @@
     "productPatternDetails": {
       "productPatternUuid": "da9c2b80-1faa-11e9-9d16-172f835613fc",
       "productPatternIcon": "production/product-icons/rolls.png",
-      "productPatternName": "Без сырой рыбы"
+      "productPatternName": "Without raw fish"
     },
     "products": [
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Лосось темаки",
+        "productName": "Temaki salmon",
         "productUuid": "e566f2b0-1fe2-11e9-94bc-a7957a1233f2",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -874,7 +874,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Овощной ролл с ореховым соусом",
+        "productName": "Vegetable Roll with Peanut Sauce",
         "productUuid": "896f7b60-1fe4-11e9-94bc-a7957a1233f2",
         "partnerObjectId": null,
         "partnerParentObjectId": null,
@@ -890,7 +890,7 @@
       },
       {
         "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Омлет Темаки",
+        "productName": "Omelette Temaki",
         "productUuid": "ab8daed0-1fe2-11e9-94bc-a7957a1233f2",
         "partnerObjectId": null,
         "partnerParentObjectId": null,

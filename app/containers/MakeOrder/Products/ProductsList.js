@@ -9,8 +9,10 @@ import {
   Dimensions,
   StyleSheet,
   ActivityIndicator,
+  TouchableOpacity,
 } from 'react-native'
 import sectionListGetItemLayout from 'react-native-section-list-get-item-layout'
+import IonIcons from 'react-native-vector-icons/Ionicons'
 import PlaceDetails from '../PlaceDetails'
 import SearchBar from '../../../components/SearchBar'
 import colors from '../../../colors'
@@ -104,21 +106,13 @@ class ProductsList extends PureComponent<Props> {
     }
   }
 
-  handleAddToCart = () => {
+  handleAddToCart = () => {}
 
-  }
+  handleIncrItemCountInCart = () => {}
 
-  handleIncrItemCountInCart = () => {
+  handleDecrItemCountInCart = () => {}
 
-  }
-
-  handleDecrItemCountInCart = () => {
-
-  }
-
-  handleImagePress = () => {
-
-  }
+  handleImagePress = () => {}
 
   renderSectionListItem = props => (
     <SectionListItem
@@ -183,6 +177,18 @@ class ProductsList extends PureComponent<Props> {
   renderPatternItem = ({ item, index }) => (
     <PatternItem item={item} index={index} navigateToPatternGroup={this.navigateToPatternGroup} />
   )
+
+  navigateToTop = () => {
+    if (this.productsList) {
+      setTimeout(() => {
+        this.productsList.getNode().scrollToLocation({
+          itemIndex: 0,
+          sectionIndex: 0,
+          viewOffset: SECTION_VIEW_OFFSET,
+        })
+      }, 100)
+    }
+  }
 
   render() {
     const {
@@ -268,27 +274,50 @@ class ProductsList extends PureComponent<Props> {
         </Animated.View>
 
         <Animated.View
-          style={{
-            justifyContent: 'center',
-            alignItems: 'flex-end',
-            overflow: 'hidden',
-            top: 0,
-            left: 0,
-            right: 0,
-            position: 'absolute',
-            transform: [
-              {
-                translateY: this.scrollOffset.interpolate({
-                  inputRange: [0, 200],
-                  outputRange: [0, -PLACE_INFO_HEIGHT + COLLAPSED_HEADER_HEIGHT],
-                  extrapolate: 'clamp',
-                }),
-              },
-            ],
-            height: PLACE_INFO_HEIGHT,
-          }}
+          style={[
+            styles.placeDetails,
+            {
+              transform: [
+                {
+                  translateY: this.scrollOffset.interpolate({
+                    inputRange: [0, 200],
+                    outputRange: [0, -PLACE_INFO_HEIGHT + COLLAPSED_HEADER_HEIGHT],
+                    extrapolate: 'clamp',
+                  }),
+                },
+              ],
+            },
+          ]}
         >
           <PlaceDetails placeDetails={placeDetails} isFetching={isFetchingPlaceDetails} />
+        </Animated.View>
+        <Animated.View
+          style={[
+            styles.upperBtn,
+            {
+              transform: [
+                {
+                  translateY: this.scrollOffset.interpolate({
+                    inputRange: [0, 600],
+                    outputRange: [200, 0],
+                    extrapolate: 'clamp',
+                  }),
+                },
+              ],
+            },
+          ]}
+        >
+          <TouchableOpacity
+            style={{ height: 40, justifyContent: 'center' }}
+            onPress={this.navigateToTop}
+          >
+            <IonIcons
+              style={{ alignSelf: 'center', opacity: 0.6 }}
+              name="ios-arrow-dropup-circle"
+              color={colors.tiles}
+              size={40}
+            />
+          </TouchableOpacity>
         </Animated.View>
       </View>
     )
@@ -333,7 +362,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: '100%',
     alignItems: 'center',
-    // maxHeight: MAX_ORDER_BTN_HEIGHT,
     zIndex: 30,
   },
   upperBtn: {
@@ -343,5 +371,15 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     justifyContent: 'center',
+  },
+  placeDetails: {
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    overflow: 'hidden',
+    top: 0,
+    left: 0,
+    right: 0,
+    position: 'absolute',
+    height: PLACE_INFO_HEIGHT,
   },
 })
