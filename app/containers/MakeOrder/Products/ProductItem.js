@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import {
   View, Text, TouchableOpacity, StyleSheet,
 } from 'react-native'
@@ -6,25 +7,33 @@ import FastImage from 'react-native-fast-image'
 import colors from '../../../colors'
 import { ITEM_HEIGHT } from './ProductsList'
 
-export default class ProductItem extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  shouldComponentUpdate(nextProps, nextState, nextContext) {
-    return nextProps.inCartCount !== this.props.inCartCount
+type Props = {
+  index: PropTypes.number.isRequired,
+  hasProperties: PropTypes.bool.isRequired,
+  inCartCount: PropTypes.number.isRequired,
+  productDescription: PropTypes.string.isRequired,
+  productName: PropTypes.string.isRequired,
+  uri: PropTypes.string.isRequired,
+  priceText: PropTypes.string.isRequired,
+  imageSize: PropTypes.string.isRequired,
+  handleAddToCart: PropTypes.func.isRequired,
+  handleIncrItemCountInCart: PropTypes.func.isRequired,
+  handleDecrItemCountInCart: PropTypes.func.isRequired,
+  handleImagePress: PropTypes.func.isRequired,
+}
+export default class ProductItem extends React.Component<Props> {
+  shouldComponentUpdate(nextProps) {
+    const { inCartCount } = this.props
+    return nextProps.inCartCount !== inCartCount
   }
 
   render() {
     const {
       index,
-      userEnv,
       hasProperties,
       inCartCount,
       productDescription,
       productName,
-      productIcon,
       uri,
       priceText,
       imageSize,
