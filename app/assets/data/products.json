@@ -1,79 +1,6 @@
 [
   {
     "productPatternDetails": {
-      "productPatternUuid": "87fb18e0-dc4e-11e8-9df7-0d29ba32d5b4",
-      "productPatternIcon": "production/product-icons/Fanta.png",
-      "productPatternName": "Drinks"
-    },
-    "products": [
-      {
-        "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Orange fresh",
-        "productUuid": "cfa2c4a0-20ae-11e9-a7f6-67994e0bdf28",
-        "partnerObjectId": null,
-        "partnerParentObjectId": null,
-        "productIndustryId": 1,
-        "productCanBeDelivered": 0,
-        "minPrice": "120",
-        "image": "production/product-icons/Fanta.png",
-        "productOptions": [],
-        "hasProperties": false,
-        "productDescription": "200 мл",
-        "cookTime": "30",
-        "specialOffers": []
-      },
-      {
-        "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Fresh carrot",
-        "productUuid": "9fb61760-20ae-11e9-a7f6-67994e0bdf28",
-        "partnerObjectId": null,
-        "partnerParentObjectId": null,
-        "productIndustryId": 1,
-        "productCanBeDelivered": 0,
-        "minPrice": "100",
-        "image": "production/product-icons/Fanta.png",
-        "productOptions": [],
-        "hasProperties": false,
-        "productDescription": "200 мл",
-        "cookTime": "30",
-        "specialOffers": []
-      },
-      {
-        "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Fresh fruit juice",
-        "productUuid": "d95cff60-23c9-11e9-9ed9-1d695cec15ec",
-        "partnerObjectId": null,
-        "partnerParentObjectId": null,
-        "productIndustryId": 1,
-        "productCanBeDelivered": 1,
-        "minPrice": "80",
-        "image": "production/product-icons/Fanta.png",
-        "productOptions": [],
-        "hasProperties": true,
-        "productDescription": "0,5 л ",
-        "cookTime": "30",
-        "specialOffers": []
-      },
-      {
-        "placeUuid": "458384b0-1f07-11e9-aeed-3bc059b7a997",
-        "productName": "Apple fresh",
-        "productUuid": "b76308f0-20ae-11e9-a7f6-67994e0bdf28",
-        "partnerObjectId": null,
-        "partnerParentObjectId": null,
-        "productIndustryId": 1,
-        "productCanBeDelivered": 0,
-        "minPrice": "110",
-        "image": "production/product-icons/Fanta.png",
-        "productOptions": [],
-        "hasProperties": false,
-        "productDescription": "200 мл",
-        "cookTime": "30",
-        "specialOffers": []
-      }
-    ]
-  },
-  {
-    "productPatternDetails": {
       "productPatternUuid": "5fdf93a0-1faa-11e9-9d16-172f835613fc",
       "productPatternIcon": "production/product-icons/rolls.png",
       "productPatternName": "Mixed"
@@ -91,7 +18,7 @@
         "image": "production/products/537282e0-1e19-11e9-8769-1163563f6b00/1548316847692_thumb.png",
         "productOptions": [],
         "hasProperties": true,
-        "productDescription": "1750 грСостав: острый ролл с лососем, Филадельфия люкс с огурцом - 2 шт., острый ролл с курицей, острый ролл с угрем, Гейша, Сяке маки с огурцом, Сяке маки  со снежным крабом, Унаги маки с чукой, овощной ролл",
+        "productDescription": "1750 грСостав: острый ролл с лососем, Филадельфия люкс с огурцом - 2 шт., острый ролл с курицей, острый ролл с угрем, Гейша, Сяке маки с огурцом",
         "cookTime": "30",
         "specialOffers": []
       },
@@ -107,7 +34,7 @@
         "image": "production/products/537282e0-1e19-11e9-8769-1163563f6b00/1548321473496_thumb.png",
         "productOptions": [],
         "hasProperties": true,
-        "productDescription": "1950 гр\nСостав: Унаги маки, Асахи, Банзай, Филадельфия люкс 2 шт., Сливочный лосось, Калифорния с курицей, Калифорния со снежным крабом, Калифорния с лососем, Икура суши 2 шт., Ика суши 2 шт., Хотате суши 2 шт., Унаги суши 2 шт., Сяке суши 2 шт., Тобико суши 2 шт.",
+        "productDescription": "1950 гр\nСостав: Унаги маки, Асахи, Банзай, Филадельфия люкс 2 шт., Сливочный лосось, Калифорния с курицей, Калифорния со снежным крабом, Калифорния с лососем, Икура суши 2 шт.",
         "cookTime": "30",
         "specialOffers": []
       },
@@ -123,7 +50,7 @@
         "image": "production/products/537282e0-1e19-11e9-8769-1163563f6b00/1548831397105_thumb.png",
         "productOptions": [],
         "hasProperties": true,
-        "productDescription": "1935 гр\nСостав: Унаги маки, асахи, Банзай, Филадельфия люкс 2 шт., Калифорния с курицей, сливочный лосось, Калифорния со снежным крабом, Калифорния с лососем, Икура суши 2 шт., Ика суши 2 шт., Хотате суши 2 шт., Унаги суши 2 шт., Сяке суши 2 шт., Тобико суши 2 шт.",
+        "productDescription": "1935 гр\nСостав: Унаги маки, асахи, Банзай, Филадельфия люкс 2 шт., Калифорния с курицей, сливочный лосось, Калифорния со снежным крабом, Калифорния с лососем,",
         "cookTime": "30",
         "specialOffers": []
       },

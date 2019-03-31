@@ -72,7 +72,7 @@ export default class SearchBar extends PureComponent<Props> {
             underlineColorAndroid="transparent"
             onChangeText={handleSearchInput}
             style={[styles.inputSmall, { paddingHorizontal: !collapsed ? 0 : 8 }]}
-            placeholder="Поиск"
+            placeholder="Search"
             placeholderTextColor={colors.placeHolder}
           />
         </Animated.View>

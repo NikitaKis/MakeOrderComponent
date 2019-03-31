@@ -88,7 +88,7 @@ class PlaceDetails extends React.PureComponent<Props> {
   render() {
     const { show } = this.state
     return (
-      <View style={{ height: 200 }}>
+      <View style={{ height: 220, marginVertical: 8 }}>
         {show && (
           <TabView
             navigationState={this.state}

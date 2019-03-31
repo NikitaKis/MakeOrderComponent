@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Platform } from 'react-native'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
   container: {
     height: '100%',
     marginHorizontal: 8,
-    marginTop: 58,
+    marginTop: Platform.OS === 'ios' ? 58 : 0,
   },
 })

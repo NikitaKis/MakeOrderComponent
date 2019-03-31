@@ -4,6 +4,9 @@ import PropTypes from 'prop-types'
 import ProductItem from './ProductItem'
 import { imageUri } from '../../../libs/utils'
 
+import 'intl'
+import 'intl/locale-data/jsonp/ru'
+
 const { width: screenWidth } = Dimensions.get('window')
 
 const IMAGE_SIZE = screenWidth / 3
