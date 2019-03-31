@@ -6,44 +6,37 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React from 'react'
+import { StyleSheet, View } from 'react-native'
+import { createStore, applyMiddleware, compose } from 'redux'
+import thunk from 'redux-thunk'
+import { logger } from 'redux-logger'
+import { Provider } from 'react-redux'
+import rootReducer from './app/reducers'
+import MakeOrder from './app/containers/MakeOrder'
+import colors from './app/colors'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+const middlewares = [thunk]
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
+if (process.env.NODE_ENV === 'development') {
+  middlewares.push(logger)
 }
+const store = compose(applyMiddleware(...middlewares))(createStore)(rootReducer)
+
+const App = () => (
+  <Provider store={store}>
+    <View style={styles.container}>
+      <MakeOrder />
+    </View>
+  </Provider>
+)
+export default App
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    paddingTop: 58,
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: colors.main,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+})
