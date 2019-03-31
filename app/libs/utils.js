@@ -12,5 +12,5 @@ const heightPercentageToDP = (heightPercent) => {
   const elemHeight = parseFloat(heightPercent)
   return PixelRatio.roundToNearestPixel(screenHeight * (elemHeight / 100))
 }
-
-export { widthPercentageToDP, heightPercentageToDP }
+const imageUri = name => ({ uri: `https://dq0wunqhhu0yr.cloudfront.net/${name}` })
+export { widthPercentageToDP, heightPercentageToDP, imageUri }

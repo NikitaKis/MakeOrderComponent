@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 import { View, StyleSheet } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { TabView, TabBar, PagerScroll } from 'react-native-tab-view'
@@ -10,7 +9,6 @@ import Description from './description'
 import SpecialOffers from './specialOffers'
 import Reviews from './reviews'
 import Photos from './photos'
-import * as placeActions from './actions'
 import tabRoutes from './tabRoutes'
 
 const initialLayout = {
@@ -18,10 +16,10 @@ const initialLayout = {
   width: 300,
 }
 type Props = {
-  dispatch: PropTypes.func.isRequired,
   placeDetails: PropTypes.object,
+  isFetching: PropTypes.bool.isRequired,
 }
-class PlaceDetails extends Component<Props> {
+class PlaceDetails extends React.PureComponent<Props> {
   constructor(props) {
     super(props)
     this.state = {
@@ -32,8 +30,6 @@ class PlaceDetails extends Component<Props> {
   }
 
   componentDidMount() {
-    const { dispatch } = this.props
-    dispatch(placeActions.fetchPlaceDetails())
     setTimeout(() => {
       this.setState({
         show: true,
@@ -108,11 +104,8 @@ class PlaceDetails extends Component<Props> {
     )
   }
 }
-const mapStateToProps = state => ({
-  placeDetails: state.places.details,
-  isFetching: state.places.isFetching,
-})
-export default connect(mapStateToProps)(PlaceDetails)
+
+export default PlaceDetails
 
 const styles = StyleSheet.create({
   tabBar: {
